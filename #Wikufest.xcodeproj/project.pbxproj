@@ -19,6 +19,13 @@
 		D057B4CB17F53B00000AC2AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D057B4B317F53B00000AC2AE /* UIKit.framework */; };
 		D057B4D317F53B00000AC2AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D057B4D117F53B00000AC2AE /* InfoPlist.strings */; };
 		D057B4D517F53B00000AC2AE /* _WikufestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4D417F53B00000AC2AE /* _WikufestTests.m */; };
+		D057B4E117F53C01000AC2AE /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D057B4E017F53C01000AC2AE /* header@2x.png */; };
+		D057B4E717F53C4D000AC2AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4E617F53C4D000AC2AE /* main.m */; };
+		D057B4F317F56F4B000AC2AE /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4EB17F56F4B000AC2AE /* MMDrawerBarButtonItem.m */; };
+		D057B4F417F56F4B000AC2AE /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4EE17F56F4B000AC2AE /* MMDrawerController.m */; };
+		D057B4F517F56F4B000AC2AE /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4F017F56F4B000AC2AE /* MMDrawerVisualState.m */; };
+		D057B4F617F56F4B000AC2AE /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4F217F56F4B000AC2AE /* UIViewController+MMDrawerController.m */; };
+		D057B4F917F56F62000AC2AE /* left.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4F817F56F62000AC2AE /* left.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,20 @@
 		D057B4D017F53B00000AC2AE /* #WikufestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "#WikufestTests-Info.plist"; sourceTree = "<group>"; };
 		D057B4D217F53B00000AC2AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D057B4D417F53B00000AC2AE /* _WikufestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _WikufestTests.m; sourceTree = "<group>"; };
+		D057B4E017F53C01000AC2AE /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
+		D057B4E517F53C4D000AC2AE /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		D057B4E617F53C4D000AC2AE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D057B4EA17F56F4B000AC2AE /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		D057B4EB17F56F4B000AC2AE /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		D057B4EC17F56F4B000AC2AE /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		D057B4ED17F56F4B000AC2AE /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		D057B4EE17F56F4B000AC2AE /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		D057B4EF17F56F4B000AC2AE /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		D057B4F017F56F4B000AC2AE /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		D057B4F117F56F4B000AC2AE /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		D057B4F217F56F4B000AC2AE /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		D057B4F717F56F62000AC2AE /* left.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = left.h; sourceTree = "<group>"; };
+		D057B4F817F56F62000AC2AE /* left.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = left.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +128,9 @@
 		D057B4B517F53B00000AC2AE /* #Wikufest */ = {
 			isa = PBXGroup;
 			children = (
+				D057B4E817F56F44000AC2AE /* library */,
+				D057B4E217F53C3F000AC2AE /* view */,
+				D057B4DE17F53C01000AC2AE /* assets */,
 				D057B4BE17F53B00000AC2AE /* POSTAppDelegate.h */,
 				D057B4BF17F53B00000AC2AE /* POSTAppDelegate.m */,
 				D057B4C117F53B00000AC2AE /* Images.xcassets */,
@@ -142,6 +166,73 @@
 				D057B4D117F53B00000AC2AE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D057B4DE17F53C01000AC2AE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4DF17F53C01000AC2AE /* image */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		D057B4DF17F53C01000AC2AE /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4E017F53C01000AC2AE /* header@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		D057B4E217F53C3F000AC2AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4E317F53C3F000AC2AE /* center */,
+				D057B4E417F53C3F000AC2AE /* left */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D057B4E317F53C3F000AC2AE /* center */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4E517F53C4D000AC2AE /* main.h */,
+				D057B4E617F53C4D000AC2AE /* main.m */,
+			);
+			path = center;
+			sourceTree = "<group>";
+		};
+		D057B4E417F53C3F000AC2AE /* left */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4F717F56F62000AC2AE /* left.h */,
+				D057B4F817F56F62000AC2AE /* left.m */,
+			);
+			path = left;
+			sourceTree = "<group>";
+		};
+		D057B4E817F56F44000AC2AE /* library */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4E917F56F4B000AC2AE /* MMDrawerController */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		D057B4E917F56F4B000AC2AE /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				D057B4EA17F56F4B000AC2AE /* MMDrawerBarButtonItem.h */,
+				D057B4EB17F56F4B000AC2AE /* MMDrawerBarButtonItem.m */,
+				D057B4EC17F56F4B000AC2AE /* MMDrawerController+Subclass.h */,
+				D057B4ED17F56F4B000AC2AE /* MMDrawerController.h */,
+				D057B4EE17F56F4B000AC2AE /* MMDrawerController.m */,
+				D057B4EF17F56F4B000AC2AE /* MMDrawerVisualState.h */,
+				D057B4F017F56F4B000AC2AE /* MMDrawerVisualState.m */,
+				D057B4F117F56F4B000AC2AE /* UIViewController+MMDrawerController.h */,
+				D057B4F217F56F4B000AC2AE /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D057B4E117F53C01000AC2AE /* header@2x.png in Resources */,
 				D057B4BA17F53B00000AC2AE /* InfoPlist.strings in Resources */,
 				D057B4C217F53B00000AC2AE /* Images.xcassets in Resources */,
 			);
@@ -240,7 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D057B4F517F56F4B000AC2AE /* MMDrawerVisualState.m in Sources */,
 				D057B4C017F53B00000AC2AE /* POSTAppDelegate.m in Sources */,
+				D057B4F617F56F4B000AC2AE /* UIViewController+MMDrawerController.m in Sources */,
+				D057B4F417F56F4B000AC2AE /* MMDrawerController.m in Sources */,
+				D057B4F917F56F62000AC2AE /* left.m in Sources */,
+				D057B4F317F56F4B000AC2AE /* MMDrawerBarButtonItem.m in Sources */,
+				D057B4E717F53C4D000AC2AE /* main.m in Sources */,
 				D057B4BC17F53B00000AC2AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +464,7 @@
 				GCC_PREFIX_HEADER = "#Wikufest/#Wikufest-Prefix.pch";
 				INFOPLIST_FILE = "#Wikufest/#Wikufest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,6 +478,7 @@
 				GCC_PREFIX_HEADER = "#Wikufest/#Wikufest-Prefix.pch";
 				INFOPLIST_FILE = "#Wikufest/#Wikufest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

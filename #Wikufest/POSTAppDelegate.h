@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface POSTAppDelegate : UIResponder <UIApplicationDelegate>
+{
+	UINavigationController *nav;
+	MMDrawerController *control;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

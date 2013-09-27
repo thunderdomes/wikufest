@@ -12,9 +12,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+	nav = [[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"main")alloc]init]];
+	[nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"header"] forBarMetrics:UIBarMetricsDefault];
+	[nav.navigationBar setAlpha:0.6];
+    control = [[MMDrawerController alloc] init];
+	[control setCenterViewController:nav];
+	[control setLeftDrawerViewController:[[NSClassFromString(@"left")alloc]init]];
+	[control setRestorationIdentifier:@"netra"];
+    [control setMaximumLeftDrawerWidth:260];
+	[control setShowsStatusBarBackgroundView:YES];
+	[control setStatusBarViewBackgroundColor:[UIColor colorWithRed:0.2 green:0.235 blue:0.263 alpha:1]];
+    [control setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+
+    [control setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+	[control setShouldStretchDrawer:FALSE];
+	[control setDrawerVisualStateBlock:[MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:100]];
+	control.showsShadow = NO;
+	
+	self.window.rootViewController=control;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -45,5 +62,40 @@
 {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+- (UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
+{
+    NSString * key = [identifierComponents lastObject];
+    if([key isEqualToString:@"MMDrawer"]){
+        return self.window.rootViewController;
+    }
+    else if ([key isEqualToString:@"MMExampleCenterNavigationControllerRestorationKey"]) {
+        return ((MMDrawerController *)self.window.rootViewController).centerViewController;
+    }
+    else if ([key isEqualToString:@"MMExampleRightNavigationControllerRestorationKey"]) {
+        return ((MMDrawerController *)self.window.rootViewController).rightDrawerViewController;
+    }
+    else if ([key isEqualToString:@"MMExampleLeftNavigationControllerRestorationKey"]) {
+        return ((MMDrawerController *)self.window.rootViewController).leftDrawerViewController;
+    }
+    else if ([key isEqualToString:@"MMExampleLeftSideDrawerController"]){
+        UIViewController * leftVC = ((MMDrawerController *)self.window.rootViewController).leftDrawerViewController;
+        if([leftVC isKindOfClass:[UINavigationController class]]){
+            return [(UINavigationController*)leftVC topViewController];
+        }
+        else {
+            return leftVC;
+        }
+        
+    }
+    else if ([key isEqualToString:@"MMExampleRightSideDrawerController"]){
+        UIViewController * rightVC = ((MMDrawerController *)self.window.rootViewController).rightDrawerViewController;
+        if([rightVC isKindOfClass:[UINavigationController class]]){
+            return [(UINavigationController*)rightVC topViewController];
+        }
+        else {
+            return rightVC;
+        }
+    }
+    return nil;
+}
 @end
