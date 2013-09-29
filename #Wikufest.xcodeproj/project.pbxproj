@@ -26,6 +26,7 @@
 		D057B4F517F56F4B000AC2AE /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4F017F56F4B000AC2AE /* MMDrawerVisualState.m */; };
 		D057B4F617F56F4B000AC2AE /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4F217F56F4B000AC2AE /* UIViewController+MMDrawerController.m */; };
 		D057B4F917F56F62000AC2AE /* left.m in Sources */ = {isa = PBXBuildFile; fileRef = D057B4F817F56F62000AC2AE /* left.m */; };
+		D09E279017F5B67800C11C96 /* right.m in Sources */ = {isa = PBXBuildFile; fileRef = D09E278F17F5B67800C11C96 /* right.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		D057B4F217F56F4B000AC2AE /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		D057B4F717F56F62000AC2AE /* left.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = left.h; sourceTree = "<group>"; };
 		D057B4F817F56F62000AC2AE /* left.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = left.m; sourceTree = "<group>"; };
+		D09E278E17F5B67800C11C96 /* right.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = right.h; sourceTree = "<group>"; };
+		D09E278F17F5B67800C11C96 /* right.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = right.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,7 @@
 		D057B4E217F53C3F000AC2AE /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D09E278B17F5B65B00C11C96 /* right */,
 				D057B4E317F53C3F000AC2AE /* center */,
 				D057B4E417F53C3F000AC2AE /* left */,
 			);
@@ -196,6 +200,8 @@
 		D057B4E317F53C3F000AC2AE /* center */ = {
 			isa = PBXGroup;
 			children = (
+				D09E278C17F5B66A00C11C96 /* keynote */,
+				D09E278D17F5B66A00C11C96 /* twitter */,
 				D057B4E517F53C4D000AC2AE /* main.h */,
 				D057B4E617F53C4D000AC2AE /* main.m */,
 			);
@@ -233,6 +239,29 @@
 				D057B4F217F56F4B000AC2AE /* UIViewController+MMDrawerController.m */,
 			);
 			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		D09E278B17F5B65B00C11C96 /* right */ = {
+			isa = PBXGroup;
+			children = (
+				D09E278E17F5B67800C11C96 /* right.h */,
+				D09E278F17F5B67800C11C96 /* right.m */,
+			);
+			path = right;
+			sourceTree = "<group>";
+		};
+		D09E278C17F5B66A00C11C96 /* keynote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = keynote;
+			sourceTree = "<group>";
+		};
+		D09E278D17F5B66A00C11C96 /* twitter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = twitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +364,7 @@
 				D057B4F517F56F4B000AC2AE /* MMDrawerVisualState.m in Sources */,
 				D057B4C017F53B00000AC2AE /* POSTAppDelegate.m in Sources */,
 				D057B4F617F56F4B000AC2AE /* UIViewController+MMDrawerController.m in Sources */,
+				D09E279017F5B67800C11C96 /* right.m in Sources */,
 				D057B4F417F56F4B000AC2AE /* MMDrawerController.m in Sources */,
 				D057B4F917F56F62000AC2AE /* left.m in Sources */,
 				D057B4F317F56F4B000AC2AE /* MMDrawerBarButtonItem.m in Sources */,
@@ -544,6 +574,7 @@
 				D057B4DA17F53B00000AC2AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D057B4DB17F53B00000AC2AE /* Build configuration list for PBXNativeTarget "#WikufestTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +583,7 @@
 				D057B4DD17F53B00000AC2AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

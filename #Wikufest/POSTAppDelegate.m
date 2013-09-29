@@ -20,8 +20,10 @@
     control = [[MMDrawerController alloc] init];
 	[control setCenterViewController:nav];
 	[control setLeftDrawerViewController:[[NSClassFromString(@"left")alloc]init]];
+	[control setRightDrawerViewController:[[NSClassFromString(@"right")alloc]init]];
 	[control setRestorationIdentifier:@"netra"];
     [control setMaximumLeftDrawerWidth:260];
+	[control setMaximumRightDrawerWidth:260];
 	[control setShowsStatusBarBackgroundView:YES];
 	[control setStatusBarViewBackgroundColor:[UIColor colorWithRed:0.2 green:0.235 blue:0.263 alpha:1]];
     [control setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
